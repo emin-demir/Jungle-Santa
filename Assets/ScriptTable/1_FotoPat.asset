@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 1
   Item_image: {fileID: -781370669, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: 
+  Item_aciklama: "Sol Bacal\u0131, Tek Caml\u0131, Ye\u015Fillikli Ev"

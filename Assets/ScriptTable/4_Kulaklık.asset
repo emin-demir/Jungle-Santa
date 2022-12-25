@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 4
   Item_image: {fileID: -540124918, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: 
+  Item_aciklama: "Ters Giri\u015Fli, B\xFCy\xFCk Caml\u0131, Uzun giri\u015Fli Ev"

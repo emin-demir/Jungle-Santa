@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 2
   Item_image: {fileID: 108432033, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: 
+  Item_aciklama: "Camdaki \xC7ocuk, Mor, Koyun olan Ev"

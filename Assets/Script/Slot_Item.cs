@@ -11,6 +11,7 @@ public class Slot_Item : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
     public GameObject Aciklama_canvas;
     public Text Aciklama;
 
+    private int slotCount ;
     public ParticleSystem particuleEffect;
 
     public AudioSource audi;
@@ -18,6 +19,12 @@ public class Slot_Item : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
     HouseSelect houseSelect;
 
     public List<GameObject> effectPoul;
+    public Envanter env;
+
+    private Animator anim;
+
+    private GameObject gameOver;
+
 
   
     public void OnPointerEnter(PointerEventData eventData)
@@ -41,7 +48,10 @@ public class Slot_Item : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
             particuleEffect.Play();
             audi.Play();
             
+
             Destroy(gameObject);
+            Envanter.slotCount --;
+            
             // StartCoroutine(deneme());
             // StopAllCoroutines(deneme());
         }
@@ -63,7 +73,12 @@ public class Slot_Item : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
     void Update()
     {
        houseSelect = GameObject.Find(ItemTable.ItemAdi).GetComponent<HouseSelect>();
-        
+        Debug.Log(Envanter.slotCount);
+
+       if(Envanter.slotCount == 0)
+       {
+        Envanter.anim.SetBool("Open",true);
+       }
     }
 
     // IEnumerator deneme()

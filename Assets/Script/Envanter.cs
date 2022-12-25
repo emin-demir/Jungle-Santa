@@ -13,7 +13,22 @@ public class Envanter : MonoBehaviour
     private float timeCount = 0;
     private float gecensure = 0.5f;
 
+    public static int slotCount = 13;
 
+    public static GameObject gameOver;
+
+    public GameObject gameOver2;
+
+    public static Animator anim;
+    public  Animator anim2;
+
+void Start()
+    {
+        anim = anim2;
+        gameOver = gameOver2;
+
+    }
+    
     void Update()
     {   
 
@@ -23,9 +38,12 @@ public class Envanter : MonoBehaviour
             gameO.SetActive(gameUpdate);
             gameUpdate = !gameUpdate;
         }
+        if(slotCount == 0)
+        {
+            gameOver2.SetActive(true);
+        }
 
-
-
+        
         // if(Input.GetKey(KeyCode.E))
         // {
         //     basildiMi = true;
@@ -40,12 +58,6 @@ public class Envanter : MonoBehaviour
 
         // else{
         //         gameO.SetActive(false)
-        // }
-
-
-
-
-
-        
+        // }   
     }
 }

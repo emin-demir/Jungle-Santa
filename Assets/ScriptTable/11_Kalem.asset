@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 11
   Item_image: {fileID: -1581598946, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: 
+  Item_aciklama: "\xC7ift Caml\u0131, Sol Bacal\u0131, Tek A\u011Fa\xE7l\u0131 Ev"

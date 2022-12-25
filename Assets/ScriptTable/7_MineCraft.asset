@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 7
   Item_image: {fileID: 711495454, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: "K\u0131rm\u0131z\u0131 Bacal\u0131 Evin Hediyesi"
+  Item_aciklama: "Mor, Tek Bacal\u0131, \xC7ocuk Seni Bekliyor"

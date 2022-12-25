@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 10
   Item_image: {fileID: -238898080, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: 
+  Item_aciklama: "Sol Bacal\u0131, Uzun Koridorlu,\xC7ift Caml\u0131 Ev"

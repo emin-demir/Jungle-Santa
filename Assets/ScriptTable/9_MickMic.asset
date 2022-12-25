@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 9
   Item_image: {fileID: -1338279086, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: 
+  Item_aciklama: "Havuzlu Ev, Sol Bacal\u0131, \xC7ift Caml\u0131"

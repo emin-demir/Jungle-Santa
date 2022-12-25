@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemAdi: 14
   Item_image: {fileID: -696297824, guid: c19f6bd2b3f69d944b585887122024a3, type: 3}
-  Item_aciklama: 
+  Item_aciklama: "Ye\u015Fillikli, Bacas\u0131z, Camda bir \xE7ocuk var"

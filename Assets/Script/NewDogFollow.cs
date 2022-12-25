@@ -8,7 +8,7 @@ public class NewDogFollow : MonoBehaviour
     GameObject  Target;
 
     Animator anim;
-    private float speed = 3f ;
+    private float speed = 5f ;
 
     private float distance;
     // Start is called before the first frame update
