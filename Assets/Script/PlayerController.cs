@@ -13,7 +13,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     Animator animator;
 
+    float timez;
+
     Vector2 movement;
+
+    public AudioSource auid;
 
     public Envanter envanter;
 
@@ -27,6 +31,17 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal", Mathf.Lerp(movement.x,1,0.3f));
         animator.SetFloat("Vertical", Mathf.Lerp(movement.y,1,0.3f));
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        if(movement.x == 1 || movement.x == -1 || movement.y == 1 || movement.y == -1)
+        {
+            timez+= 0.7f;
+            if(timez >= 100f)
+            {
+                auid.Play();
+                timez = 0f;
+            }
+
+        }
        }
     }
     void FixedUpdate()
@@ -35,7 +50,5 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
          }
     }
-
-
 
 }

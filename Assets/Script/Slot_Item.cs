@@ -11,6 +11,10 @@ public class Slot_Item : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
     public GameObject Aciklama_canvas;
     public Text Aciklama;
 
+    public ParticleSystem particuleEffect;
+
+    public AudioSource audi;
+
     HouseSelect houseSelect;
 
     public List<GameObject> effectPoul;
@@ -33,14 +37,10 @@ public class Slot_Item : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
         Debug.Log(ItemTable.ItemAdi + " İsimli Item Kullanıldı" + " House"+houseSelect.house);
         if(houseSelect.house == int.Parse(ItemTable.ItemAdi))
         {
-            for (int i = 0; i < effectPoul.Count; i++)
-            {
-                if(!effectPoul[i].activeInHierarchy)
-                {
-                    effectPoul[i].gameObject.SetActive(true);
-                    break;
-                }
-            }
+            
+            particuleEffect.Play();
+            audi.Play();
+            
             Destroy(gameObject);
             // StartCoroutine(deneme());
             // StopAllCoroutines(deneme());
